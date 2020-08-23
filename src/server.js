@@ -20,6 +20,7 @@ app.use(bodyParser.json())
 const user = require('./routes/auth.route')
 
 app.use('/api/user', user)
+
 app.get('/', (req, res) => {
   res.send('test route')
 })
